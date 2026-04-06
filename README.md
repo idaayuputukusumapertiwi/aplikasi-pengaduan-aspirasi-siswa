@@ -43,39 +43,6 @@ Aplikasi berbasis web untuk mengelola pengaduan dan aspirasi siswa di SMK Kusuma
 
 ---
 
-## ��� Struktur Folder
-UJIKOM/
-├── admin/                  # Halaman & fitur admin
-│   ├── dashboard-admin.php
-│   ├── login-admin.php
-│   ├── managesiswa.php
-│   └── managekategori.php
-├── app/                    # Logika aplikasi
-│   ├── edit-siswa.php
-│   ├── hapus-siswa.php
-│   ├── login-process.php
-│   ├── proses_aspirasi.php
-│   └── ...
-├── assets/                 # CSS, JS, Gambar
-│   ├── css/
-│   ├── js/
-│   ├── img/
-│   └── ...
-├── models/                 # Model database & auth
-│   ├── database.php
-│   ├── auth.php
-│   └── function.php
-├── siswa/                  # Halaman siswa
-│   ├── dashboard.php
-│   └── login-siswa.php
-├── utils/                  # Utility functions
-├── config/                 # Konfigurasi (tidak diupload)
-├── index.php
-├── login-as.php
-└── pengaduan_siswa.sql     # File database
-
----
-
 ## ⚙️ Cara Instalasi
 
 ### Prasyarat
@@ -101,7 +68,7 @@ UJIKOM/
    - Import file `pengaduan_siswa.sql`
 
 4. **Konfigurasi koneksi database**
-   - Salin file `config/config.example.php` → `config/config.php`
+   - Ubah file `models/database.php`
    - Sesuaikan isi file:
 ```php
    <?php
@@ -120,16 +87,11 @@ UJIKOM/
 
 | Role | Username | Password |
 |------|----------|----------|
-| Admin | admin | (sesuai database) |
+| Admin | admin | admin123 |
 | Siswa | (NIS siswa) | (sesuai database) |
 
 ---
 
-## ��� Screenshots
-
-> *(Tambahkan screenshot aplikasi di sini)*
-
----
 
 ## ���‍��� Developer
 
