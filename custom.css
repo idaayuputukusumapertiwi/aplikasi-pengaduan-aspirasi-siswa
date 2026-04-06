@@ -1,0 +1,46 @@
+.hero-section {
+  position: relative;
+  height: 512px;
+  background-image: url("../img/sekolah.jpg"); /* BACKGROUND */
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-section h1 {
+  margin: 20px 0 0 0;
+  font-size: 42px;
+  color: black;
+}
+
+.hero-section p {
+  font-size: 18px;
+}
+.flow-card {
+  background-color: #eef9f9;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.flow-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #003f4f;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 26px;
+}

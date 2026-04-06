@@ -1,0 +1,239 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #e8edf8;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8edf8 100%) !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html {
+  background: #e8edf8;
+}
+
+
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-card {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 16px;
+  border: none;
+  background: #1e3a5f;
+  box-shadow: 0 6px 25px rgba(30, 58, 95, 0.25);
+  overflow: hidden;
+}
+
+.card-header-custom {
+  background: #1e3a5f;
+  padding: 20px 20px;
+  text-align: center;
+  border: none;
+}
+
+.logo-wrapper {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 8px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo-wrapper img {
+  width: 35px;
+  height: auto;
+}
+
+.login-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.login-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 3px;
+}
+
+.card-body-custom {
+  padding: 20px 35px;
+  background: #ffffff;
+}
+
+.role-selector {
+  text-align: center;
+}
+
+.role-label {
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.btn-login {
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 500;
+  font-size: 14px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-login i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.btn-admin {
+  background: #1e3a5f;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(30, 58, 95, 0.25);
+}
+
+.btn-admin:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(30, 58, 95, 0.35);
+  color: #fff;
+  background: #2d4a6f;
+}
+
+.btn-siswa {
+  background: #3b5a7f;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(59, 90, 127, 0.25);
+}
+
+.btn-siswa:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(59, 90, 127, 0.35);
+  color: #fff;
+  background: #4a6a8f;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  color: #999;
+  font-size: 11px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.divider span {
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #999;
+  font-size: 11px;
+}
+
+.footer-text a {
+  color: #1e3a5f;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-text a:hover {
+  color: #2d4a6f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-card {
+    max-width: 500px;
+  }
+
+  .card-body-custom {
+    padding: 18px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-card {
+    margin: 20px;
+    border-radius: 14px;
+  }
+
+  .card-header-custom {
+    padding: 12px 15px;
+  }
+
+  .card-body-custom {
+    padding: 15px 20px;
+  }
+
+  .login-title {
+    font-size: 16px;
+  }
+
+  .btn-login {
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  .logo-wrapper {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-wrapper img {
+    width: 32px;
+  }
+}
+
+.btn-login:active {
+  transform: scale(0.98);
+}

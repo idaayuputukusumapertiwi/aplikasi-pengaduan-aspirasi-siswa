@@ -1,0 +1,9 @@
+# Config database (jangan diupload karena berisi password)
+config/
+
+# File log
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
